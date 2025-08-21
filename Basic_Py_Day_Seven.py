@@ -113,17 +113,80 @@
 
 # Best Practices Three Nested If else
 
-exam_results = int(input("Enter your Exam Score: "))
-attendance = int(input("Enter your attendance: "))
+# exam_results = int(input("Enter your Exam Score: "))
+# attendance = int(input("Enter your attendance: "))
 
-if exam_results >= 90 and attendance >= 80:
-    print("scholarship")
-elif exam_results >= 90:
-    print("pass but no scholarship")
-elif exam_results >= 75:
-    print("pass normally")
-elif attendance >= 80:
-    print("remedial")
-else:
-    print("not admitted")
+# if exam_results >= 90 and attendance >= 80:
+#     print("scholarship")
+# elif exam_results >= 90:
+#     print("pass but no scholarship")
+# elif exam_results >= 75:
+#     print("pass normally")
+# elif attendance >= 80:
+#     print("remedial")P
+# else:
+#     print("not admitted")
 
+#######################################################################################
+
+# collection conditionals using IN
+# course_name = str(input("Enter your Course: ")).capitalize()
+# science_courses = ["Biology", "Chemistry", "Physics"]
+# tech_courses = ["Programming", "Networking", "Database"]
+# arts_courses = ["Painting", "Music", "Theater"]
+
+# if course_name in science_courses :
+#     print ("You enrolled in a Science course.")
+# elif course_name in tech_courses :
+#     print("You Enrolled in tech course")
+# elif course_name in arts_courses :
+#     print("You Enrolled in arts course")
+# else :
+#     print("Hello World")
+
+#####################################################################################
+
+# collection conditionals getting specific Value
+# course_name = str(input("Enter your Course: ")).capitalize()
+
+# science_courses = ["Biology", "Chemistry", "Physics"]
+# tech_courses = ["Programming", "Networking", "Database"]
+# arts_courses = ["Painting", "Music", "Theater"]
+
+# if "Biology" in course_name :
+#     print("You enroll in the biology course")
+# elif "Programming" in course_name :
+#     print("You enroll in the Programming course")
+# elif "Painting" in course_name :
+#     print("You enroll in the Painting course")
+# else :
+#     print("Hello World")
+
+#####################################################################################
+
+# While Loop Activity
+
+# A user has a balance of ₱10,000.
+# Create a program using a while loop that:
+# Continuously asks the user to enter an amount to withdraw.
+# If the entered amount is greater than the balance, print "Insufficient funds.".
+# If the entered amount is 0 or negative, print "Invalid amount.".
+# Otherwise, subtract it from the balance and print the updated balance.
+# The loop should keep running until the balance is 0 or the user enters "exit".
+# At the end, print "Thank you for using our ATM!".
+
+
+user_balance = 10000
+
+while True :
+    amount = int(input("Enter an Amount to withdraw: "))
+    if amount > user_balance :
+            print("Insufficient funds.")
+    elif amount < 0 :
+        print("Invalid amount.")
+    else :
+        user_balance -= amount 
+        print("Your Balance now is", user_balance)
+    print("Thank you for using our ATM")
+
+    ##################################################################################
