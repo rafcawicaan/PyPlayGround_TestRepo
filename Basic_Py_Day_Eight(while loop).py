@@ -56,10 +56,54 @@
 # While loop
 # Cheking the age if the age is legal or minor
 
-age = 12
+# age = 12
 
-while age < 18:
-    print("Too young" + str(age))
-    age = age + 1 
-else :
-    print("Legal Age" + str(age))
+# while age < 18:
+#     print("Too young" + str(age))
+#     age = age + 1 
+# else :
+#     print("Legal Age" + str(age))
+
+################################################################################################
+
+# WHile Loop in Collection
+
+# variable
+# names = [
+#       # index positions
+#       #  0       1        2        3        4         5       6
+#       'Raf', 'Randy', 'Rodel', 'Ryan', 'Kenneth', 'Mark', 'Danica']
+
+# i = 0  # starting index (first position in the list)
+
+# # while loop will run as long as i <= 4 (so only the first 5 names will print)
+# while i <= 4:
+#     # access list element using index
+#     print("Hello", names[i])
+#     i = i + 1  # move to the next index
+
+# # else part of while runs only when the loop condition becomes False
+# else:
+#     print("No names found in the list")
+
+############################################################################################
+
+# WHile loop
+
+# list of numbers from 1 to 10
+numbers = [1,2,3,4,5,6,7,8,9,10]
+
+# starting index at 0 (first element in the list)
+i = 0
+
+# loop continues while i is less than the length of the list
+while i < len(numbers) :
+    # check if the current number is even (divisible by 2)
+    if (numbers[i] % 2 == 0 ):
+        print("Even Number : " + str(numbers[i]))
+    # if not even, then it's odd
+    else :
+        print("ODD Number : " + str(numbers[i]))
+    
+    # move to the next index
+    i = i + 1
