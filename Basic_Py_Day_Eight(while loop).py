@@ -91,19 +91,57 @@
 # WHile loop
 
 # list of numbers from 1 to 10
-numbers = [1,2,3,4,5,6,7,8,9,10]
+# numbers = [1,2,3,4,5,6,7,8,9,10]
 
-# starting index at 0 (first element in the list)
-i = 0
+# # starting index at 0 (first element in the list)
+# i = 0
 
-# loop continues while i is less than the length of the list
-while i < len(numbers) :
-    # check if the current number is even (divisible by 2)
-    if (numbers[i] % 2 == 0 ):
-        print("Even Number : " + str(numbers[i]))
-    # if not even, then it's odd
-    else :
-        print("ODD Number : " + str(numbers[i]))
+# # loop continues while i is less than the length of the list
+# while i < len(numbers) :
+#     # check if the current number is even (divisible by 2)
+#     if (numbers[i] % 2 == 0 ):
+#         print("Even Number : " + str(numbers[i]))
+#     # if not even, then it's odd
+#     else :
+#         print("ODD Number : " + str(numbers[i]))
     
-    # move to the next index
-    i = i + 1
+#     # move to the next index
+#     i = i + 1
+
+
+#######################################################################################
+#WHile loop Math Game
+
+# Problem Statement:
+# Write a Python program that:
+# Randomly chooses a number between 1 and 50.
+# The player keeps guessing until they find the correct number.
+# The program should give hints:
+# “Too High!” if the guess is higher.
+# “Too Low!” if the guess is lower.
+# Count how many tries it takes.
+# When the player guesses correctly, display:
+# The number of attempts
+# A “You Win!” message
+
+lives = 3
+answer = 12
+
+while lives > 0 :
+    number = (int(input("Enter a Number from 1 to 50: ")))
+
+    if number > answer :
+        print("Your answer is high")
+    elif number < answer :
+        print("Your Answer is low")
+    elif number == answer :
+        print("Your answer is correct!")
+        break
+    else :
+        print("Enter a valid number")
+
+    if number != answer :
+        lives -= 1
+        print("Your Remaining lives is", lives)
+    else :
+        print("sample")
