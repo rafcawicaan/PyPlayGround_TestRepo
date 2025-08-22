@@ -64,3 +64,23 @@
 #     if x in vowels :
 #         count += 1
 # print("The total vowels in your word is", count)
+
+
+###################################################################################################
+# Account Authentication using For Loop
+
+username = ["admin", "client1", "client2"]
+password = ["abc123", "pass123", "123cdf"]
+
+user = str(input("Enter a username: "))
+enter_pass = str(input("Enter a Password: "))
+
+for x in range(len(username)) :
+    if user == username[x] and enter_pass == password[x] :
+        print("Hello", user)
+        break
+    else :
+        print("Wrong Username or Password Please Try again!")
+        break
+print("Welcome have a nice day!")
+
