@@ -69,18 +69,56 @@
 ###################################################################################################
 # Account Authentication using For Loop
 
-username = ["admin", "client1", "client2"]
-password = ["abc123", "pass123", "123cdf"]
+# username = ["admin", "client1", "client2"]
+# password = ["abc123", "pass123", "123cdf"]
 
-user = str(input("Enter a username: "))
-enter_pass = str(input("Enter a Password: "))
+# user = str(input("Enter a username: "))
+# enter_pass = str(input("Enter a Password: "))
 
-for x in range(len(username)) :
-    if user == username[x] and enter_pass == password[x] :
-        print("Hello", user)
-        break
-    else :
-        print("Wrong Username or Password Please Try again!")
-        break
-print("Welcome have a nice day!")
+# for x in range(len(username)) :
+#     if user == username[x] and enter_pass == password[x] :
+#         print("Hello", user)
+#         break
+#     else :
+#         print("Wrong Username or Password Please Try again!")
+#         break
+# print("Welcome have a nice day!")
+
+#########################################################################################
+# Asks the user to enter a lowercase word.
+# Uses a for loop to go through each character.
+# Counts how many times each letter appears.
+# Prints the result.
+# lowercase_word = input("Enter a lowercase word: ")
+
+# counts = {}
+# for x in lowercase_word.items():
+#     if x in counts:
+#         counts[x] += 1
+#     else :
+#         counts[x] = 1
+# print("Letter" + counts)
+
+#######################################################################################3
+# Asks the user to enter a word.
+# Prints each character of the word on a separate line.
+# At the end, also print how many characters the word has.
+
+# enter_word = input()
+# for x in enter_word:
+#     print(x)
+# print("The word has", len(enter_word), "characters.")
+
+##########################################################################################
+# Write a Python program that:
+# Asks the user to enter a number.
+# Prints the multiplication table for that number from 1 to 10.
+
+num1 = int(input("Enter a Number"))
+for x in range(1, 11):
+    result = num1 * x
+    print(num1, "x", x, "=", result)
+# print(num1, "x", x, "=", result)
+
+
 
