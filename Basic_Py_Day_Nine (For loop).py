@@ -114,11 +114,33 @@
 # Asks the user to enter a number.
 # Prints the multiplication table for that number from 1 to 10.
 
-num1 = int(input("Enter a Number"))
-for x in range(1, 11):
-    result = num1 * x
-    print(num1, "x", x, "=", result)
-# print(num1, "x", x, "=", result)
+# num1 = int(input("Enter a Number: "))
+# for x in range(1, 11):
+#     result = num1 * x
+#     print(num1, "x", x, "=", result)
+
+##############################################################################################
+# Asks the user to enter a number n.
+# Prints all even numbers from 1 to n.
+# At the end, prints how many even numbers were found.
+
+# num = int(input("Enter a number: "))
+# count = 0
+# for n in range(1, num + 1):
+#     if n % 2 == 0:
+#         print(n)
+#     count += 1
+# print(f"There are {count} even numbers")
 
 
+########################################################################################################
+# Asks the user to enter a positive number n.
+# Uses a for loop to calculate the factorial of that number.
+# Prints the result.
 
+num = int(input("Enter a positive number: "))
+fact = 1
+for n in range(1, num + 1):
+    fact *= n
+    print(n)
+print(f"The factorial of {num} is {fact}")

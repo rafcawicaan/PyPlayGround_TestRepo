@@ -218,25 +218,32 @@
 # Accepts booking details (traveler name, payment_method, date) as **kwargs.
 # Prints the list of destinations and the booking details.
 
-def book_trip(*places, **details):
-    print("\nYour Travel Destinations:")
-    for p in places:
-        print("-", p)
+# def book_trip(*places, **details):
+#     print("\nYour Travel Destinations:")
+#     for p in places:
+#         print("-", p)
 
-    print("\nBooking Details:")
-    for key, value in details.items():
-        print(f"{key.capitalize()}: {value}")
+#     print("\nBooking Details:")
+#     for key, value in details.items():
+#         print(f"{key.capitalize()}: {value}")
 
-# User decides how many places to enter
-destinations = []
-num = int(input("How many destinations do you want to add? "))
+# # User decides how many places to enter
+# destinations = []
+# num = int(input("How many destinations do you want to add? "))
 
-for i in range(num):
-    destinations.append(input(f"Enter destination {i+1}: "))
+# for i in range(num):
+#     destinations.append(input(f"Enter destination {i+1}: "))
 
-# Pass list using * to unpack it into *args
-book_trip(*destinations,
-          name=input("Enter Your Name: "),
-          method=input("Payment Method: "),
-          date=input("Date of Travel: "))
+# # Pass list using * to unpack it into *args
+# book_trip(*destinations,
+#           name=input("Enter Your Name: "),
+#           method=input("Payment Method: "),
+#           date=input("Date of Travel: "))
 
+################################################################################################
+
+def greetings(name):
+    print(print(f"Hello {name} welcome to python."))
+greetings("Raf")
+greetings("Ryan")
+greetings("Kenneth")
