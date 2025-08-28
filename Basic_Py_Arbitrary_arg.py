@@ -242,8 +242,18 @@
 
 ################################################################################################
 
-def greetings(name):
-    print(print(f"Hello {name} welcome to python."))
-greetings("Raf")
-greetings("Ryan")
-greetings("Kenneth")
+# def greetings(name):
+#     print(print(f"Hello {name} welcome to python."))
+# greetings("Raf")
+# greetings("Ryan")
+# greetings("Kenneth")
+
+#################################################################################################
+# Defines a function calculate_average(grades) that accepts a list of grades and returns the average.
+# Defines another function get_remark(average) that returns "Pass" if average is 75 or above, otherwise "Fail".
+# In the main program:
+# Ask the user for 5 grades.
+# Call the two functions to calculate and print the result.
+
+def calculate_average(grades):
+    print()
