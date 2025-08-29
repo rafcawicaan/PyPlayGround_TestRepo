@@ -96,9 +96,58 @@
 
 ###############################################################################################################################
 
-class MyName():
-    def __init__(self, name):
-        self.name = name
-        print(name)
+# class MyName():
+#     def __init__(self, name):
+#         self.name = name
+#         print(name)
 
-NameOne = MyName("Raf")
+# NameOne = MyName("Raf")
+
+###################################################################################################
+
+# Create a class named Student with the following requirements:
+# Attributes (inside __init__):
+# name (student’s name)
+# math (math grade)
+# science (science grade)
+# english (english grade)
+# Functions (methods):
+# get_average() → returns the average of the three grades.
+# get_highest() → returns the subject with the highest grade.
+# display_info() → prints the student’s name, grades, and average.
+# Main Program:
+# Create at least 2 Student objects.
+# Call their methods to show results.
+
+class Student:
+    def __init__(self, name, math, science, english):
+        self.name = name
+        self.math = math
+        self.science = science
+        self.english = english
+
+    def get_average(self):
+        grades = [self.math, self.science, self.english]
+        average = sum(grades) / len(grades)
+        return average
+
+    def get_highest(self):
+        grades = {
+            "Math": self.math,
+            "Science": self.science,
+            "English": self.english
+        }
+        return max(grades, key=grades.get)
+    
+    def display_info(self):
+        print(f"Student Name: {self.name}")
+        print(f"Math: {self.math}, Science: {self.science}, English: {self.english}")
+        print(f"Average: {self.get_average():.2f}")   # formatted to 2 decimal places
+        print(f"Highest Subject: {self.get_highest()}\n")
+
+# Example Students
+studentOne = Student("Raf", 60, 55, 50)
+studentTwo = Student("Ryan", 80, 70, 60)
+
+studentOne.display_info()
+studentTwo.display_info()
